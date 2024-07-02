@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+      h1 {
+        font-size: 80px;
+        color: blueviolet;
+        text-align: center;
+      }
+      h2 {
+        font-size: 50px;
+        text-align: center;
+        color: blueviolet;
+      }
+      img {
+        display: black;
+        border-radius: 10px;
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 10px;
+        text-align: justify;
+        padding: 5px;
+      }
+      button {
+        padding: 15px 20px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        transition: all 150ms ease-in-out;
+        background: blueviolet;
+        border: 1px solid blueviolet;
+      }
+      .house {
+        max-width: 600px;
+        background-color: pink;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="house">
+      <h1>I love tea</h1>
+      <h2>My favourite is green tea</h2>
+      <img
+        src="http://www.todayifoundout.com/wp-content/uploads/2014/12/tea-bags.jpg"
+        alt="Green tea"
+        width="300"
+      />
+      <hr />
+      <p>
+        Green tea is a type of tea that is made from Camellia sinensis leaves
+        and buds that have not undergone the same withering and oxidation
+        process which is used to make oolong teas and black teas. Green tea
+        originated in China, and since then its production and manufacture has
+        spread to other countries in East Asia.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Green_tea"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on wikipedia
+      </a>
+      <br />
+      <br />
+      <button>👉 Buy Green Tea</button>
+      <br/>
+      Coded by KYLIE AMADE.
+      <br />
+      <br />
+    </div>
+    <script>
+      function updateInformation() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert(
+          "Welcome" +
+            " " +
+            name +
+            " " +
+            "to Green tea" +
+            " " +
+            "We'll keep in touch via" +
+            " " +
+            email
+        );
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", updateInformation);
+    </script>
+  </body>
+</html>
